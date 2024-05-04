@@ -16,7 +16,7 @@ function CTAText() {
         </h2>
       </div>
       <button className="bg-secondary text-slate-200 font-semibold text-lg rounded-3xl px-6 py-2">
-        Begin your digital trnasformation
+        Begin your digital transformation
       </button>
     </div>
   );
