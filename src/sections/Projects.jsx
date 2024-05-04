@@ -1,11 +1,11 @@
-import React from "react";
-
 function Projects() {
   return (
-    <div className="bg-black" >
-      <h2 className="text-center text-slate-200 text-4xl font-bold">Our work</h2>
+    <div className="bg-black">
+      <h2 className="text-center text-slate-200 text-4xl font-bold">
+        Our work
+      </h2>
       <div className="grid grid-cols-2 mx-72 my-10 gap-8">
-        <div >
+        <div>
           <img
             alt=""
             src="../images/image1.jpg"
@@ -69,7 +69,6 @@ function Projects() {
             reiciendis sequi ipsam incidunt.
           </p>
         </div>
-        
       </div>
     </div>
   );
