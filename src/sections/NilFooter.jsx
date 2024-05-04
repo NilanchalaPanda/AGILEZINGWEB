@@ -1,4 +1,4 @@
-function Footer() {
+function NilFooter() {
   return (
     <>
       <div className="flex flex-col py-10 justify-around w-full gap-x-8 gap-y-3 px-8 md:flex-row md:px-0">
@@ -41,4 +41,4 @@ function Footer() {
   );
 }
 
-export default Footer;
+export default NilFooter;

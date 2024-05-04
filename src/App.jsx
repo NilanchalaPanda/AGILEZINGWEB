@@ -1,7 +1,7 @@
 import CTA from "./sections/CTAText";
 import Hero from "./sections/Hero";
 import Projects from "./sections/Projects";
-import Footer from "./sections/Footer";
+import NilFooter from "./sections/NilFooter";
 import Features from "./sections/Features";
 
 
@@ -13,7 +13,7 @@ function App() {
       <Features/>
       <CTA />
       <hr className="mx-14" />
-      <Footer />
+      <NilFooter />
     </>
   );
 }
