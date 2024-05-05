@@ -3,6 +3,7 @@ import Hero from "./sections/Hero";
 import Projects from "./sections/Projects";
 import NilFooter from "./sections/NilFooter";
 import Features from "./sections/Features";
+import Footer from "./sections/Footer";
 
 
 function App() {

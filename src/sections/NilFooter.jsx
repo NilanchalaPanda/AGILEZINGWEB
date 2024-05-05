@@ -35,7 +35,7 @@ function NilFooter() {
       </div>
       {/* <hr className="my-4 w-50%" /> */}
       <p className="text-gray-200 flex justify-center mb-10">
-        &copy; 2023 AgileZingWeb. All rights reserved.
+        &copy; 2024 AgileZingWeb. All rights reserved.
       </p>
     </>
   );

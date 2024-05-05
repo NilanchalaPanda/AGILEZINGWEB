@@ -4,7 +4,7 @@ function Projects() {
       <h2 className="text-center text-slate-200 text-4xl font-bold">
         Our work
       </h2>
-      <div className="flex flex-col mx-4 md:grid-cols-2 md:mx-72  gap-8">
+      <div className="flex flex-col mx-4 md:grid md:grid-cols-2 md:mx-72  gap-8">
         <div>
           <img
             alt=""
