@@ -2,9 +2,9 @@ import Hero from "@/components/Hero";
 import { InfiniteDevelopmentStrip } from "@/components/InfinteDevelopmentStrip";
 import Toolstack from "@/components/Toolstack";
 import Process from "@/components/Process";
-import Services from "@/components/Services";
-import Footer from "@/components/Footer";
+import Features from "@/components/Features";
 import CTAText from "@/components/CTAText";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -15,8 +15,8 @@ export default function Home() {
       <div className="my-20">
         <Hero />
         <Toolstack />
-        <Services />
         <InfiniteDevelopmentStrip />
+        <Features />
         <Process />
         <CTAText />
         <Footer />
@@ -29,13 +29,13 @@ export default function Home() {
   /*
 HERO ✅
 TOOLSTACK ✅
-SERVICES 🟨
+SERVICES --> Nilanchal
 INFINITESTRIP ✅
-FEATURES 
+FEATURES ✅
 PROCESS 🟨
-PROJECTS 
-FAQ'S 
-ABOUT US
+PROJECTS --> Usmaan
+FAQ'S (Optional)
+ABOUT US --> Usmaan
 CTA 🟨
 FOOTER ✅
 */
