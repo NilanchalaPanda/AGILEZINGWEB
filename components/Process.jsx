@@ -2,13 +2,13 @@
 
 // pages/index.js
 import React, { useState } from "react";
-import FileExplorer from "../components/FileExplorer";
-import CodeViewer from "../components/CodeViewer";
-import Preview from "../components/Preview";
+import FileExplorer from "./FileExplorer";
+import CodeViewer from "./CodeViewer";
+import Preview from "./Preview";
 import Head from "next/head";
 import { GoDotFill } from "react-icons/go";
 
-const Home = () => {
+const Process = () => {
   const [selectedFile, setSelectedFile] = useState(
     "initial-setup-marketing.js"
   );
@@ -47,4 +47,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Process;

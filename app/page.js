@@ -1,7 +1,7 @@
 import Hero from "@/components/Hero";
 import { InfiniteDevelopmentStrip } from "@/components/InfinteDevelopmentStrip";
 import Toolstack from "@/components/Toolstack";
-import Steps from "@/components/Steps";
+import Process from "@/components/Process";
 
 export default function Home() {
   return (
@@ -13,8 +13,23 @@ export default function Home() {
         <Hero />
         <Toolstack />
         <InfiniteDevelopmentStrip />
-        <Steps />
+        <Process />
       </div>
     </>
   );
 }
+
+
+{/*
+HERO ✅
+TOOLSTACK ✅
+SERVICES 
+INFINITESTRIP ✅
+FEATURES 
+PROCESS ✅
+PROJECTS 
+FAQ'S 
+ABOUT US
+CTA
+FOOTER 
+*/}
