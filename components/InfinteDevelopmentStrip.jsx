@@ -23,6 +23,6 @@ const SERVICES = [
     quote: "UI/UX DESIGNS",
   },
   {
-    quote: "SAAS PRODUCTS",
+    quote: "SaaS PRODUCTS",
   },
 ];
