@@ -14,7 +14,7 @@ const Home = () => {
   );
 
   return (
-    <div className="mt-10 border w-[95%] mx-auto border-gray-600 rounded-2xl lg:w-[85%]">
+    <div className="mt-10 border w-[95%] mx-auto border-gray-600/80 rounded-2xl lg:w-[85%]">
       <div className="p-2 border-b border-gray-600 flex lg:px-4 lg:py-3">
         <ul className="flex">
           <li>
@@ -32,7 +32,7 @@ const Home = () => {
         <title>Marketing for SaaS Product</title>
       </Head>
       <div className="flex flex-col lg:flex-row lg:justify-between">
-        <div className="py-2 border-b border-gray-600 lg:border-r">
+        <div className="py-2 border-b border-r-0 border-gray-600 lg:border-r lg:border-b-0">
           <FileExplorer
             selectedFile={selectedFile}
             setSelectedFile={setSelectedFile}
