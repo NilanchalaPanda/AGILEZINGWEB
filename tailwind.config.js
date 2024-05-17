@@ -15,6 +15,11 @@ module.exports = {
   theme: {
     // rest of the code
     extend: {
+      colors:{
+        primary: "#561DE4",
+        secondary: "#A961FD",
+        tertiary: "#5E2F71"
+      },
       animation: {
         scroll:
           "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",

@@ -2,25 +2,22 @@
 import React from "react";
 
 const files = [
-  "user-welcome.tsx",
-  "reset-password.tsx",
-  "user-invite.tsx",
-  "weekly-digest.tsx",
+  "initial-work.js",
+  "dashboard-work.js",
+  "advanced-thing.js",
+  "final-prod.js",
 ];
 
 const FileExplorer = ({ selectedFile, setSelectedFile }) => {
   return (
-    <div className="w-[20%] mr-1 border-1 border-white p-[1rem]">
-      {files.map((file) => (
+    <div className="overflow-x-auto px-2 no-scrollbar w-full flex flex-row lg:flex-col lg:px-4 lg:start-0 lg:h-[40rem]">
+      {files.map((file, idx) => (
         <div
-          key={file}
+          key={idx}
           onClick={() => setSelectedFile(file)}
-          style={{
-            cursor: "pointer",
-            padding: "0.5rem",
-            borderRadius: "10px",
-            backgroundColor: file === selectedFile ? "#c27272" : "transparent",
-          }}
+          className={`cursor-pointer p-2 rounded-md transition-all ease-in-out duration-200 whitespace-nowrap ${
+            file === selectedFile ? "text-secondary" : "text-slate-300"
+          } lg:hover:bg-gray-300/15`}
         >
           {file}
         </div>

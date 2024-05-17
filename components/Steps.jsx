@@ -1,29 +1,50 @@
 "use client";
 
+// pages/index.js
 import React, { useState } from "react";
 import FileExplorer from "../components/FileExplorer";
 import CodeViewer from "../components/CodeViewer";
 import Preview from "../components/Preview";
 import Head from "next/head";
+import { GoDotFill } from "react-icons/go";
 
-const Steps = () => {
-  const [selectedFile, setSelectedFile] = useState("step1.jsx");
+const Home = () => {
+  const [selectedFile, setSelectedFile] = useState(
+    "initial-setup-marketing.js"
+  );
 
   return (
-    <div style={{ display: "flex", height: "100vh" }}>
-      <Head>
-        <title>Code Viewer with Output</title>
-      </Head>
-      <FileExplorer
-        selectedFile={selectedFile}
-        setSelectedFile={setSelectedFile}
-      />
-      <div style={{ width: "40%", padding: "1rem" }}>
-        <CodeViewer selectedFile={selectedFile} />
+    <div className="mt-10 border w-[95%] mx-auto border-gray-600 rounded-2xl lg:w-[85%]">
+      <div className="p-2 border-b border-gray-600 flex lg:px-4 lg:py-3">
+        <ul className="flex">
+          <li>
+            <GoDotFill className="text-red-500 text-2xl" />
+          </li>
+          <li>
+            <GoDotFill className="text-yellow-500 text-2xl" />
+          </li>
+          <li>
+            <GoDotFill className="text-green-500 text-2xl" />
+          </li>
+        </ul>
       </div>
-      <Preview selectedFile={selectedFile} />
+      <Head>
+        <title>Marketing for SaaS Product</title>
+      </Head>
+      <div className="flex flex-col lg:flex-row lg:justify-between">
+        <div className="py-2 border-b border-gray-600 lg:border-r">
+          <FileExplorer
+            selectedFile={selectedFile}
+            setSelectedFile={setSelectedFile}
+          />
+        </div>
+        <div className="hidden border-r border-gray-600 lg:block">
+          <CodeViewer selectedFile={selectedFile} />
+        </div>
+        <Preview selectedFile={selectedFile} />
+      </div>
     </div>
   );
 };
 
-export default Steps;
+export default Home;
