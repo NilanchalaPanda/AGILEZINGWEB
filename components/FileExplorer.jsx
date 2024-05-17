@@ -10,7 +10,7 @@ const files = [
 
 const FileExplorer = ({ selectedFile, setSelectedFile }) => {
   return (
-    <div className="overflow-x-auto px-2 no-scrollbar w-full flex flex-row lg:flex-col lg:px-4 lg:start-0 lg:h-[40rem]">
+    <div className="overflow-x-auto px-2 no-scrollbar w-full flex flex-row lg:flex-col lg:px-4 lg:start-0 lg:h-[35rem]">
       {files.map((file, idx) => (
         <div
           key={idx}
