@@ -6,11 +6,11 @@ function Footer() {
       <div className="relative mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8 lg:pt-24">
         <div className="lg:flex lg:items-end lg:justify-between">
           <div>
-            <div className="flex justify-center text-primary lg:justify-start">
+            <div className="flex justify-center text-gray-300 lg:justify-start">
               <h3 className="text-3xl font-bold ">AgileZingWeb</h3>
             </div>
 
-            <p className="mx-auto mt-6 max-w-md text-center leading-relaxed text-white lg:text-left">
+            <p className="mx-auto mt-6 max-w-md text-center leading-relaxed text-gray-300 lg:text-left">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt
               consequuntur amet culpa cum itaque neque.
             </p>
