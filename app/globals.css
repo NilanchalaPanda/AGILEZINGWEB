@@ -42,3 +42,17 @@ body {
     display: none; /* Safari and Chrome */
   }
 }
+
+&::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
+.no-visible-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  -webkit-overflow-scrolling: touch;
+}
+
+.no-visible-scrollbar::-webkit-scrollbar {
+  display: none;
+}

@@ -6,6 +6,7 @@ import Process from "@/components/Process";
 import Features from "@/components/Features";
 import CTAText from "@/components/CTAText";
 import Footer from "@/components/Footer";
+import { Services } from "@/components/Services";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
         <NavBar />
         <Hero />
         <Toolstack />
+        <Services />
         <InfiniteDevelopmentStrip />
         <Features />
         <Process />
@@ -28,7 +30,7 @@ export default function Home() {
   /*
 HERO ✅
 TOOLSTACK ✅
-SERVICES --> Nilanchal
+SERVICES 🟨
 INFINITESTRIP ✅
 FEATURES ✅
 PROCESS 🟨
