@@ -7,6 +7,7 @@ import Features from "@/components/Features";
 import CTAText from "@/components/CTAText";
 import Footer from "@/components/Footer";
 import { Services } from "@/components/Services";
+import MovingBorder from "@/components/MovingBorder";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
         <InfiniteDevelopmentStrip />
         <Features />
         <Process />
+        <MovingBorder />
         <CTAText />
         <Footer />
       </div>
