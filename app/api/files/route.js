@@ -5,8 +5,7 @@ import { NextResponse } from "next/server";
 export async function GET(req) {
   const { searchParams } = new URL(req.url);
   const filename = searchParams.get("filename");
-
-  console.log(filename);
+  // console.log(filename);
 
   if (!filename) {
     return NextResponse.json(
@@ -17,10 +16,10 @@ export async function GET(req) {
 
   try {
     const filePath = path.join(process.cwd(), "files", filename);
-    console.log("Attempting to read file:", filePath);
+    // console.log("Attempting to read file:", filePath);
 
     const fileContents = await fs.readFile(filePath, "utf8");
-    console.log("File contents read successfully.");
+    // console.log("File contents read successfully.");
 
     return NextResponse.json({ content: fileContents });
   } catch (error) {
