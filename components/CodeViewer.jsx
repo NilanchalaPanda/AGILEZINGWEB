@@ -1,65 +1,45 @@
-// "use client";
-
-// import React, { useState, useEffect } from "react";
-// import CodeMirror from "@uiw/react-codemirror";
-// import { material } from "@uiw/codemirror-theme-material";
-// import { javascript } from "@codemirror/lang-javascript";
-
-// const CodeViewer = ({ selectedFile }) => {
-//   const [code, setCode] = useState("");
-
-//   useEffect(() => {
-//     fetch(`/files/${selectedFile}`)
-//       .then((response) => response.text())
-//       .then(setCode);
-//   }, [selectedFile]);
-
-//   return (
-//     <CodeMirror
-//       value={code}
-//       extensions={[javascript({ jsx: true })]}
-//       theme={material}
-//     />
-//   );
-// };
-
-// export default CodeViewer;
-
-// components/CodeViewer.js
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import CodeMirror from "@uiw/react-codemirror";
 import { material } from "@uiw/codemirror-theme-material";
 import { javascript } from "@codemirror/lang-javascript";
-import { promises as fs } from "fs";
 
 const CodeViewer = ({ selectedFile }) => {
+  const [error, setError] = useState(null);
   const [code, setCode] = useState("");
 
-  const data = async (file) => {
-    // const file = await fs.readFile(`/files/${selectedFile}`, "utf-8");
-    fetch(file)
-      .then((response) => {
-        console.log(response);
-        response.text();
-      })
-      .then(setCode);
-  };
-
   useEffect(() => {
-    data();
-  }, []);
+    const fetchCode = async () => {
+      try {
+        const response = await fetch(`/api/files?filename=${selectedFile}`);
+        if (!response.ok) {
+          throw new Error(`Error fetching file: ${response.statusText}`);
+        }
+        const data = await response.json();
+        setCode(data.content);
+        setError(null); // Clear any previous errors
+      } catch (error) {
+        setError(error.message);
+      }
+    };
+
+    fetchCode();
+  }, [selectedFile]);
 
   return (
     <div className="h-full">
-      <CodeMirror
-        value={code}
-        extensions={[javascript({ jsx: true })]}
-        theme={material}
-        readOnly={true}
-        className="h-full"
-      />
+      {error ? (
+        <div className="text-red-500">Error: {error}</div>
+      ) : (
+        <CodeMirror
+          value={code}
+          extensions={[javascript({ jsx: true })]}
+          theme={material}
+          readOnly
+          className="h-full"
+        />
+      )}
     </div>
   );
 };

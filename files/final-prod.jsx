@@ -1,4 +1,3 @@
-// files/final-product-marketing.js
 import React from "react";
 
 const FinalProductMarketing = () => {

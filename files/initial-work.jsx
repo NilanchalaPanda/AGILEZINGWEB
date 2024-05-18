@@ -1,9 +1,8 @@
-// files/initial-setup-marketing.js
 import React from "react";
 
 const InitialSetupMarketing = () => {
   return (
-    <div className="p-[1rem]">
+    <div style={{ padding: "1rem" }}>
       <h1 style={{ color: "#4CAF50" }}>
         Step 1: Seamless Initial Setup and Onboarding
       </h1>

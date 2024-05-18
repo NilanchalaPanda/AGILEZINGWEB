@@ -10,8 +10,9 @@ import { GoDotFill } from "react-icons/go";
 
 const Process = () => {
   const [selectedFile, setSelectedFile] = useState(
-    "initial-setup-marketing.js"
+    "initial-work.jsx"
   );
+  const [code, setCode] = useState("");
 
   return (
     <div className="mt-10 border w-[95%] mx-auto border-gray-600/80 rounded-2xl lg:w-[85%]">
@@ -39,9 +40,13 @@ const Process = () => {
           />
         </div>
         <div className="hidden border-r border-gray-600 lg:block">
-          <CodeViewer selectedFile={selectedFile} />
+          <CodeViewer
+            selectedFile={selectedFile}
+            code={code}
+            setCode={setCode}
+          />
         </div>
-        <Preview selectedFile={selectedFile} />
+        <Preview selectedFile={selectedFile} code={code} />
       </div>
     </div>
   );

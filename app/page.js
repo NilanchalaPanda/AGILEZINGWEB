@@ -1,7 +1,6 @@
 import Hero from "@/components/Hero";
 import { InfiniteDevelopmentStrip } from "@/components/InfinteDevelopmentStrip";
 import Toolstack from "@/components/Toolstack";
-import Steps from "@/components/Steps";
 import NavBar from "@/components/NavBar";
 import Process from "@/components/Process";
 import Features from "@/components/Features";
@@ -12,7 +11,7 @@ export default function Home() {
   return (
     <>
       <div className="mb-20">
-        <NavBar/>
+        <NavBar />
         <Hero />
         <Toolstack />
         <InfiniteDevelopmentStrip />
